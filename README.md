@@ -1,3 +1,4 @@
+一款使用vuejs实现的音频播放器，简单小巧。但是有待于改善。demo:http://www.egtch.com/t_works/tplayer/
 # tplayer
 
 > king2088 TPlayer
