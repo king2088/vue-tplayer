@@ -1,0 +1,89 @@
+{
+  "music":[
+    {
+      "id":"1",
+      "name": "海阔天空",
+      "singer":"Beyond",
+      "img":"http://192.168.1.8/music/hktk.jpg",
+      "url": "http://192.168.1.8/music/海阔天空.mp3"
+    },
+    {
+      "id":"2",
+      "name": "花房姑娘",
+      "singer":"崔健",
+      "img":"http://192.168.1.8/music/hfgn.jpg",
+      "url": "http://192.168.1.8/music/花房姑娘.mp3"
+    },
+    {
+      "id":"3",
+      "name": "今天",
+      "singer":"刘德华",
+      "img":"http://192.168.1.8/music/jt.jpg",
+      "url": "http://192.168.1.8/music/今天.mp3"
+    },
+    {
+      "id":"4",
+      "name": "南方姑娘",
+      "singer":"赵雷",
+      "img":"http://192.168.1.8/music/nfgn.jpg",
+      "url": "http://192.168.1.8/music/南方姑娘.mp3"
+    },
+    {
+      "id":"5",
+      "name": "想太多",
+      "singer":"李玖哲",
+      "img":"http://192.168.1.8/music/xtd.jpg",
+      "url": "http://192.168.1.8/music/想太多.mp3"
+    },
+    {
+      "id":"6",
+      "name": "有多少爱可以重来",
+      "singer":"迪克牛仔",
+      "img":"http://192.168.1.8/music/ydsakycl.jpg",
+      "url": "http://192.168.1.8/music/有多少爱可以重来.mp3"
+    },
+    {
+      "id":"7",
+      "name": "Apologize",
+      "singer":"Timbaland Remix",
+      "img":"http://192.168.1.8/music/apologize.jpg",
+      "url": "http://192.168.1.8/music/Apologize (Timbaland Remix).mp3"
+    },
+    {
+      "id":"8",
+      "name": "Hero",
+      "singer":"Enrique Iglesias",
+      "img":"http://192.168.1.8/music/hero.jpg",
+      "url": "http://192.168.1.8/music/Hero.mp3"
+    },
+    {
+      "id":"9",
+      "name": "I AM YOU",
+      "singer":"Kim Taylor",
+      "img":"http://192.168.1.8/music/iamyou.jpg",
+      "url": "http://192.168.1.8/music/I Am You.mp3"
+    },
+    {
+      "id":"10",
+      "name": "三万英尺",
+      "singer":"迪克牛仔",
+      "img":"http://192.168.1.8/music/ydsakycl.jpg",
+      "url": "http://192.168.1.8/music/三万英尺.mp3"
+    },
+    {
+      "id":"11",
+      "name": "十一年",
+      "singer":"邱永传",
+      "img":"http://192.168.1.8/music/syn.jpg",
+      "url": "http://192.168.1.8/music/十一年.mp3"
+    },
+    {
+      "id":"12",
+      "name": "一生所爱",
+      "singer":"卢冠廷",
+      "img":"http://192.168.1.8/music/yssa.jpg",
+      "url": "http://192.168.1.8/music/一生所爱.mp3"
+    }
+
+  ]
+}
