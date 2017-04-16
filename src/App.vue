@@ -3,14 +3,14 @@
     <div class="list"><span>{{music.name}}-{{music.singer}}</span><a @click="isShow(),isBg()"><img src="./assets/player/list.png" alt=""></a></div>
     <div class="music">
       <div class="text">{{music.name}}<span>{{music.singer}}</span></div>
-      <div class="img"><img id="pic" :src="music.img"></div>
+      <div class="img"><img ref="pic" id="pic" :src="music.img"></div>
     </div>
     <div class="player">
-      <div class="ico"><img src="./assets/player/backward.png" id="pre" @click="isPre"></div>
-      <div class="ico"><img src="./assets/player/play.png" id="play" @click="isPlay"><img src="./assets/player/pause.png" id="stop" @click="isStop"></div>
-      <div class="ico"><img src="./assets/player/forward.png" id="next" @click="isNext"></div>
+      <div class="ico"><img src="./assets/player/backward.png" ref="pre" id="pre" @click="isPre"></div>
+      <div class="ico"><img src="./assets/player/play.png" ref="play" id="play" @click="isPlay"><img src="./assets/player/pause.png" id="stop" @click="isStop"></div>
+      <div class="ico"><img src="./assets/player/forward.png" ref="next" id="next" @click="isNext"></div>
     </div>
-    <audio id="audio" :src="music.url" preload autoplay @ended="isNext"></audio>
+    <audio ref="audio" id="audio" :src="music.url" preload autoplay @ended="isNext"></audio>
     <transition name="fade">
       <div class="songList" v-show="showList">
          <div class="items">
@@ -72,18 +72,19 @@ export default {
         /*查看当前audio是否正在播放，如果停止，那么播放下一曲*/
 
         isPlay(){
-          document.getElementById("audio").play();
-          document.getElementById("play").style.display="none";
-          document.getElementById("stop").style.display="inline";
-          document.getElementById("pic").style.animationPlayState="running";
-          return false
+            document.getElementById("audio").play();
+            document.getElementById("play").style.display = "none";
+            document.getElementById("stop").style.display = "inline";
+            document.getElementById("pic").style.animationPlayState = "running";
+            //console.log(+this.$refs.play+this.$refs.stop+this.$refs.pic);
+            return false
         },
         isStop(){
-           document.getElementById("audio").pause();
-           document.getElementById("stop").style.display="none";
-           document.getElementById("play").style.display="inline";
-           document.getElementById("pic").style.animationPlayState="paused";
-           return false
+            document.getElementById("audio").pause();
+            document.getElementById("stop").style.display = "none";
+            document.getElementById("play").style.display = "inline";
+            document.getElementById("pic").style.animationPlayState = "paused";
+            return false
         },
         isNext(){
             this.id++;
@@ -121,11 +122,11 @@ export default {
 }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" type="text/stylus">
 html,body
   height 100%
   width 100%
-  max-width 600px
+  max-width 640px
   margin 0 auto
   .clear
     clear both
@@ -156,7 +157,7 @@ html,body
           width 40px
     .player
       width 100%
-      max-width 600px
+      max-width 640px
       height 30%
       opacity .8
       position fixed
@@ -227,7 +228,7 @@ html,body
       top: 0;
       z-index: 100;
       width: 100%;
-      max-width 600px
+      max-width 640px
       margin 0 auto
       height: 100%;
       overflow: auto;
@@ -244,7 +245,7 @@ html,body
         border-bottom 2px #000 solid
         .title
           width 100%
-          max-width 600px
+          max-width 640px
           height 50px
           line-height 50px
           background #FFF
